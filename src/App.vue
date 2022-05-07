@@ -1,26 +1,35 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="app">
+    
+    
+    <h1 class="h1">Запомни меня!</h1>
+    <p>Запомни и открой все зеленые клетки</p>
+
+    <BoardTest />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import BoardTest from './components/BoardTest.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    BoardTest,
+    
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
+  .app {
+    margin-top: 40px;
+    text-align: center;
+    font-family: Helvetica, sans-serif;
+  }
+
+  .logo {
+    width: 100px;
+  }
+
 </style>
